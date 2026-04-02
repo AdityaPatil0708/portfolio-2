@@ -12,14 +12,14 @@ export function Profile() {
             alt=""
             className="rounded-full h-28 sm:h-35"
           />
-          <p className="font-semibold text-[#4a4a4a] text-sm text-center">
+          <p className="font-semibold text-[#4a4a4a] dark:text-zinc-300 text-sm text-center">
             Aditya Patil
           </p>
         </div>
 
         {/* Right: skills */}
         <div className="flex flex-col gap-2 w-full">
-          <h2 className="text-2xl font-bold text-[#4a4a4a] underline underline-offset-4 mb-3 text-center md:text-left">
+          <h2 className="text-2xl font-bold text-[#4a4a4a] dark:text-zinc-100 underline underline-offset-4 mb-3 text-center md:text-left">
             Skills
           </h2>
           {[
@@ -29,8 +29,8 @@ export function Profile() {
             { label: "DevOps & Tools", value: "Docker, Kubernetes, GitHub, Jenkins, GitHub Actions, AWS, GCP" },
             { label: "General", value: "Linux, Networking, Operating Systems" },
           ].map(({ label, value }) => (
-            <p key={label} className="text-[13px] sm:text-[14px] text-gray-600 leading-relaxed">
-              <strong className="text-[#4a4a4a]">• {label} : </strong>
+            <p key={label} className="text-[13px] sm:text-[14px] text-gray-600 dark:text-zinc-400 leading-relaxed">
+              <strong className="text-[#4a4a4a] dark:text-zinc-200">• {label} : </strong>
               {value}
             </p>
           ))}

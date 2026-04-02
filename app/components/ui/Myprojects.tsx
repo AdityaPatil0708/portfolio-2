@@ -41,25 +41,27 @@ function GithubIcon() {
 export function Myprojects() {
   return (
     <section className="px-10 py-10">
-      <h2 className="text-3xl font-semibold text-[#4a4a4a] mb-6">Projects</h2>
+      <h2 className="text-3xl font-semibold text-[#4a4a4a] dark:text-zinc-100 mb-6">
+        Projects
+      </h2>
 
       <div className="flex flex-col gap-3">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="flex items-center justify-between px-6 py-5 rounded-xl border border-[#d0cff0]/60"
+            className="flex items-center justify-between px-6 py-5 rounded-md border border-zinc-400/60 dark:border-zinc-700 dark:bg-zinc-900/40 hover:dark:bg-zinc-900/60 transition-colors"
           >
-            <h3 className="text-[18px] font-semibold text-[#4a4a4a] m-0">
+            <h3 className="text-[18px] font-semibold text-[#4a4a4a] dark:text-zinc-200 m-0">
               {project.title}
             </h3>
 
-            <div className="flex items-center gap-4 text-[#4a4a4a]">
+            <div className="flex items-center gap-4 text-[#4a4a4a] dark:text-zinc-400">
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#443da3] transition-colors"
+                  className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors"
                 >
                   <GithubIcon />
                 </a>
@@ -69,7 +71,7 @@ export function Myprojects() {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl leading-none hover:text-[#443da3] transition-colors"
+                  className="text-xl leading-none hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors"
                 >
                   ↗
                 </a>

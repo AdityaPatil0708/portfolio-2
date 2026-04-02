@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,12 +40,14 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-white font-poppins">
-        <div className="max-w-2xl mx-auto w-full flex flex-col min-h-screen mt-40">
-          <Navbar />
-          <main className="">{children}</main>
-          <Footer />
-        </div>
+      <body className="min-h-screen flex flex-col font-poppins">
+        <ThemeProvider>
+          <div className="max-w-2xl mx-auto w-full flex flex-col min-h-screen mt-40">
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
