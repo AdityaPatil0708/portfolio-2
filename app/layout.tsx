@@ -42,7 +42,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen font-poppins">
         <ThemeProvider>
-          <div className="mx-auto flex min-h-screen w-full max-w-2xl flex-col py-28">
+          <div className="mx-auto flex min-h-screen w-full max-w-2xl flex-col py-35">
             <Navbar />
             <main className="">{children}</main>
             <Footer />

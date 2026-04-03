@@ -61,7 +61,7 @@ export function Myprojects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors"
+                  className="hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors hover:cursor-pointer"
                 >
                   <GithubIcon />
                 </a>
@@ -71,7 +71,7 @@ export function Myprojects() {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl leading-none hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors"
+                  className="text-xl leading-none hover:text-[#443da3] dark:hover:text-indigo-400 transition-colors hover:cursor-pointer"
                 >
                   ↗
                 </a>

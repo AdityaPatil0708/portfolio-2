@@ -40,10 +40,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         }`}
       >
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute -top-24 -left-20 h-80 w-40 rounded-full bg-[#443da3]/18 blur-3xl dark:bg-[#443da3]/18" />
-          <div className="absolute -bottom-24 -right-20 h-80 w-40 rounded-full bg-[#443da3]/12 blur-3xl dark:bg-[#443da3]/12" />
-          <div className="absolute bottom-0 left-1/5 h-30 w-90 rounded-full bg-[#443da3]/10 blur-3xl dark:bg-[#443da3]/18" />
-          <div className="absolute top-0 right-1/5 h-30 w-90 rounded-full bg-[#443da3]/10 blur-3xl dark:bg-[#443da3]/18" />
+          <div className="absolute -top-24 -left-20 h-60 w-50 rounded-full bg-[#443da3]/18 blur-3xl dark:bg-[#443da3]/18" />
+          <div className="absolute -bottom-24 -right-20 h-60 w-50 rounded-full bg-[#443da3]/12 blur-3xl dark:bg-[#443da3]/12" />
+          <div className="absolute bottom-0 left-1/5 h-10 w-100 rounded-full bg-[#443da3]/10 blur-3xl dark:bg-[#443da3]/18" />
+          <div className="absolute top-0 right-1/5 h-10 w-100 rounded-full bg-[#443da3]/10 blur-3xl dark:bg-[#443da3]/18" />
         </div>
         <div className="relative z-10">{children}</div>
       </div>
