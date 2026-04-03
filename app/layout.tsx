@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { ThemeProvider } from "./context/ThemeContext";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,11 +41,19 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} h-full antialiased`}
     >
       <body className="min-h-screen font-poppins">
-        <ThemeProvider>
-          <div className="mx-auto flex min-h-screen w-full max-w-2xl flex-col py-35">
-            <Navbar />
-            <main className="">{children}</main>
-            <Footer />
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <div className="relative min-h-screen overflow-x-hidden transition-colors bg-white dark:bg-gray-950 text-[#4a4a4a] dark:text-zinc-100">
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
+              <div className="absolute -top-24 -left-20 h-60 w-50 rounded-full bg-[#443da3]/18 blur-3xl" />
+              <div className="absolute -bottom-24 -right-20 h-60 w-50 rounded-full bg-[#443da3]/12 blur-3xl" />
+              <div className="absolute bottom-0 left-1/5 h-10 w-100 rounded-full bg-[#443da3]/10 blur-3xl" />
+              <div className="absolute top-0 right-1/5 h-10 w-100 rounded-full bg-[#443da3]/10 blur-3xl" />
+            </div>
+            <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-2xl flex-col py-35">
+              <Navbar />
+              <main>{children}</main>
+              <Footer />
+            </div>
           </div>
         </ThemeProvider>
       </body>
