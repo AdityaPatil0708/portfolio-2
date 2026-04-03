@@ -11,7 +11,7 @@ export default function Hero1() {
         <p className="text-gray-600 dark:text-zinc-400 leading-relaxed text-[14px] md:text-[15px]">
           I&apos;m a{" "}
           <strong className="font-semibold text-[#4a4a4a] dark:text-zinc-200">
-            Full Stack Developer &amp; DevOps Engineer
+            Full Stack Developer &amp; DevOps Enthusiast
           </strong>{" "}
           with a strong focus on building scalable server-side systems and
           creating automated, reliable deployment workflows. Through
