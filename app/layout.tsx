@@ -46,8 +46,8 @@ export default function RootLayout({
             <div className="pointer-events-none absolute inset-0 overflow-hidden">
               <div className="absolute -top-24 -left-20 h-60 w-50 rounded-full bg-[#443da3]/18 blur-3xl" />
               <div className="absolute -bottom-24 -right-20 h-60 w-50 rounded-full bg-[#443da3]/12 blur-3xl" />
-              <div className="absolute bottom-0 left-1/5 h-10 w-100 rounded-full bg-[#443da3]/10 blur-3xl" />
-              <div className="absolute top-0 right-1/5 h-10 w-100 rounded-full bg-[#443da3]/10 blur-3xl" />
+              <div className="absolute bottom-0 left-1/5 h-20 w-130 rounded-full bg-[#443da3]/10 blur-3xl" />
+              <div className="absolute top-0 right-1/5 h-20 w-130 rounded-full bg-[#443da3]/10 blur-3xl" />
             </div>
             <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-2xl flex-col py-35">
               <Navbar />
